@@ -24,6 +24,7 @@ const plugin: FastifyPluginAsyncJsonSchemaToTs<{}, Http2Server> = async function
     (req) => {
       /// The `x`, `y`, and `z` types are automatically inferred
       const { x, y, z } = req.body;
+      return { x, y, z };
     }
   );
 };
